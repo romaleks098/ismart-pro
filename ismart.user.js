@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         iSmart PRO Telegram Bridge
 // @namespace    https://edu.ismart.org/
-// @version      3.0.0
+// @version      3.1.0
 // @description  Автоматическое решение любых тестов на платформе iSmart на 100% через защищённого Telegram-бота @smartgdz_app_bot в 1 клик
 // @author       iSmart PRO Team
 // @match        https://edu.ismart.org/*
@@ -11,13 +11,14 @@
 // @grant        GM_xmlhttpRequest
 // @grant        GM_openInTab
 // @grant        window.focus
+// @connect      176-109-103-204.sslip.io
 // @run-at       document-idle
 // ==/UserScript==
 
 (function () {
     'use strict';
 
-    const BACKEND_URL = 'https://ismart-bot.onrender.com';
+    const BACKEND_URL = 'https://176-109-103-204.sslip.io';
     let isRequesting = false;
 
     function injectStyles() {
